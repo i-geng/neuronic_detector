@@ -12,6 +12,7 @@ public class LevelManager : MonoBehaviour
     List<Neuron> neurons = new List<Neuron>();
     public int totalConnections;
     public int currConnections;
+    private GameObject[] goals;
 
     private void Awake()
     {
@@ -23,6 +24,7 @@ public class LevelManager : MonoBehaviour
 
         isComplete = false;
         currConnections = 0;
+        goals = GameObject.FindGameObjectsWithTag("Goal");
     }
 
     // Update is called once per frame
@@ -39,10 +41,20 @@ public class LevelManager : MonoBehaviour
     public void incrementConnections()
     {
         currConnections += 1;
+        checkCompletion();
     }
 
     public void decrementConnections()
     {
         currConnections -= 1;
+    }
+
+    private void checkCompletion()
+    {
+        if (currConnections >= totalConnections) {
+            foreach (GameObject g in goals) {
+                g.GetComponent<Goal>().changeSprite();
+            }
+        }
     }
 }

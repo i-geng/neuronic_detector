@@ -5,12 +5,14 @@ using UnityEngine;
 public class Terminal : MonoBehaviour
 {
     public int terminalType;
-    public bool isConnected;
+    private bool isConnected;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         isConnected = false;
+        
     }
 
     // Update is called once per frame
