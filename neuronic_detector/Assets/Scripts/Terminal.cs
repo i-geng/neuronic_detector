@@ -32,4 +32,16 @@ public class Terminal : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        GameObject g = collision.gameObject;
+        if (g.CompareTag("Terminal")) {
+            if (g.GetComponent<Terminal>().terminalType != terminalType) {
+                g.GetComponent<Terminal>().isConnected = false;
+                isConnected = false;
+                LevelManager.Instance.decrementConnections();
+            }
+        }
+    }
 }

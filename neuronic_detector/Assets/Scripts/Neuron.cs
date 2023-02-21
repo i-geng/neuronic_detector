@@ -26,8 +26,8 @@ public class Neuron : MonoBehaviour
 
     public IEnumerator RotateNeuron()
     {
-        for (int i = 0; i < 9; i++) {
-            transform.rotation *= Quaternion.Euler(0f, 0f, 10);
+        for (int i = 0; i < 18; i++) {
+            transform.rotation *= Quaternion.Euler(0f, 0f, 5);
             yield return new WaitForSeconds(0f);
         }
     }

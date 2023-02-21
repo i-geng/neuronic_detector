@@ -30,7 +30,6 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
     }
 
     public void addNeuron(Neuron n)
@@ -52,6 +51,7 @@ public class LevelManager : MonoBehaviour
     private void checkCompletion()
     {
         if (currConnections >= totalConnections) {
+            isComplete = true;
             foreach (GameObject g in goals) {
                 g.GetComponent<Goal>().changeSprite();
             }
