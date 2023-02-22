@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class LevelManager : MonoBehaviour
     public int totalConnections;
     public int currConnections;
     private GameObject[] goals;
+    public GameObject nextLevelButton;
 
     private void Awake()
     {
@@ -25,6 +27,7 @@ public class LevelManager : MonoBehaviour
         isComplete = false;
         currConnections = 0;
         goals = GameObject.FindGameObjectsWithTag("Goal");
+        nextLevelButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -55,6 +58,14 @@ public class LevelManager : MonoBehaviour
             foreach (GameObject g in goals) {
                 g.GetComponent<Goal>().changeSprite();
             }
+            nextLevelButton.SetActive(true);
         }
+    }
+
+    public void goToNextLevel()
+    {
+        Debug.Log("go to next level");
+        GameObject gm = GameObject.FindWithTag("GameController");
+        gm.GetComponent<GameManager>().StartGame();
     }
 }
