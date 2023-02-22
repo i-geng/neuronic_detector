@@ -65,6 +65,8 @@ public class LevelManager : MonoBehaviour
         if (levelNumber < gm.GetComponent<GameManager>().GetFinalLevel()) {
             string sceneName = "Level" + (levelNumber + 1);
             gm.GetComponent<GameManager>().StartLevel(sceneName);
+        } else {
+            gm.GetComponent<GameManager>().EndGame();
         }
         
     }
