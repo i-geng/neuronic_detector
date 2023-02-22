@@ -15,6 +15,7 @@ public class LevelManager : MonoBehaviour
     public int currConnections;
     private GameObject[] goals;
     public GameObject nextLevelButton;
+    public int levelNumber;
 
     private void Awake()
     {
@@ -66,6 +67,11 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("go to next level");
         GameObject gm = GameObject.FindWithTag("GameController");
-        gm.GetComponent<GameManager>().StartGame();
+
+        if (levelNumber < gm.GetComponent<GameManager>().GetFinalLevel()) {
+            string sceneName = "Level" + (levelNumber + 1);
+            gm.GetComponent<GameManager>().StartLevel(sceneName);
+        }
+        
     }
 }
