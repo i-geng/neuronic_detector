@@ -6,7 +6,7 @@ public class Goal : MonoBehaviour
 {
 
     private SpriteRenderer spriteRenderer;
-    public Sprite newSprite;
+    public Sprite activatedSprite;
 
     // Start is called before the first frame update
     void Start()
@@ -20,8 +20,8 @@ public class Goal : MonoBehaviour
         
     }
 
-    public void changeSprite()
+    public void activateGoalSprite()
     {
-        spriteRenderer.sprite = newSprite;
+        spriteRenderer.sprite = activatedSprite;
     }
 }

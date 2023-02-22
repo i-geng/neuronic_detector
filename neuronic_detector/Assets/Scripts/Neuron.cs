@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Neuron : MonoBehaviour
 {
-    //public Terminal terminal0;
-    //public Terminal terminal1;
 
     // Start is called before the first frame update
     void Start()
