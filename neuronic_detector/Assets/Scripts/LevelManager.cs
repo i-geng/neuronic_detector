@@ -9,13 +9,13 @@ public class LevelManager : MonoBehaviour
 
     public static LevelManager Instance { get { return _instance; } }
 
-    private bool isComplete;
-    List<Neuron> neurons = new List<Neuron>();
-    public int totalConnections;
-    public int currConnections;
-    private GameObject[] goals;
+    #region levelInfo
+    public int totalConnections;    // Total connections required for level.
+    public int currConnections;     // Current number of connections.
+    private GameObject[] goals;     // A list of goals, in case there are multiple goals in a level.
     public GameObject nextLevelButton;
-    public int levelNumber;
+    public int levelNumber;         // The tutorial level is Level0.
+    #endregion
 
     private void Awake()
     {
@@ -25,7 +25,6 @@ public class LevelManager : MonoBehaviour
             _instance = this;
         }
 
-        isComplete = false;
         currConnections = 0;
         goals = GameObject.FindGameObjectsWithTag("Goal");
         nextLevelButton.SetActive(false);
@@ -34,11 +33,7 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    }
 
-    public void addNeuron(Neuron n)
-    {
-        neurons.Add(n);
     }
 
     public void incrementConnections()
@@ -55,9 +50,8 @@ public class LevelManager : MonoBehaviour
     private void checkCompletion()
     {
         if (currConnections >= totalConnections) {
-            isComplete = true;
             foreach (GameObject g in goals) {
-                g.GetComponent<Goal>().changeSprite();
+                g.GetComponent<Goal>().activateGoalSprite();
             }
             nextLevelButton.SetActive(true);
         }

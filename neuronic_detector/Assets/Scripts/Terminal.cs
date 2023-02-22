@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class Terminal : MonoBehaviour
 {
-    public int terminalType;
-    private bool isConnected;
-    
+    public int terminalType;    
 
     // Start is called before the first frame update
     void Start()
     {
-        isConnected = false;
         
     }
 
@@ -26,8 +23,6 @@ public class Terminal : MonoBehaviour
         GameObject g = collision.gameObject;
         if (g.CompareTag("Terminal")) {
             if (g.GetComponent<Terminal>().terminalType != terminalType) {
-                g.GetComponent<Terminal>().isConnected = true;
-                isConnected = true;
                 LevelManager.Instance.incrementConnections();
             }
         }
@@ -38,8 +33,6 @@ public class Terminal : MonoBehaviour
         GameObject g = collision.gameObject;
         if (g.CompareTag("Terminal")) {
             if (g.GetComponent<Terminal>().terminalType != terminalType) {
-                g.GetComponent<Terminal>().isConnected = false;
-                isConnected = false;
                 LevelManager.Instance.decrementConnections();
             }
         }
