@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 51527617a0453794e81b446b19011c55, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d20db121635c745ad962e6e84edeffe1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -263,6 +263,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1260788285}
     m_Modifications:
+    - target: {fileID: 4260606671623008306, guid: ed925f5d6ed024ef2921c7b3f09de17e, type: 3}
+      propertyPath: canRotate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4260606671623008307, guid: ed925f5d6ed024ef2921c7b3f09de17e, type: 3}
       propertyPath: m_Name
       value: NeuronRight (1)
@@ -297,7 +301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4260606671623008318, guid: ed925f5d6ed024ef2921c7b3f09de17e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4260606671623008318, guid: ed925f5d6ed024ef2921c7b3f09de17e, type: 3}
       propertyPath: m_LocalRotation.y
@@ -597,6 +601,22 @@ PrefabInstance:
     - target: {fileID: 8647107396057463444, guid: 41185501824d64a5c9731d4357d981a8, type: 3}
       propertyPath: m_Name
       value: NeuronLeft (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647107396057463445, guid: 41185501824d64a5c9731d4357d981a8, type: 3}
+      propertyPath: canRotate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647107396057463448, guid: 41185501824d64a5c9731d4357d981a8, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647107396057463448, guid: 41185501824d64a5c9731d4357d981a8, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647107396057463448, guid: 41185501824d64a5c9731d4357d981a8, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8647107396057463449, guid: 41185501824d64a5c9731d4357d981a8, type: 3}
       propertyPath: m_RootOrder
@@ -968,6 +988,10 @@ PrefabInstance:
     - target: {fileID: 8647107396057463444, guid: 41185501824d64a5c9731d4357d981a8, type: 3}
       propertyPath: m_Name
       value: NeuronLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647107396057463445, guid: 41185501824d64a5c9731d4357d981a8, type: 3}
+      propertyPath: canRotate
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8647107396057463449, guid: 41185501824d64a5c9731d4357d981a8, type: 3}
       propertyPath: m_RootOrder
@@ -1348,6 +1372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NeuronShort (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4818037237187073883, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
+      propertyPath: canRotate
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
 --- !u!4 &1577910079 stripped
@@ -1362,6 +1390,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1260788285}
     m_Modifications:
+    - target: {fileID: 4818037237187073878, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818037237187073878, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.1551485
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818037237187073878, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818037237187073878, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073879, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1380,19 +1424,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073879, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073879, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073879, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073879, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073879, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1404,7 +1448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073879, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073882, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_Name
@@ -1561,6 +1605,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1260788285}
     m_Modifications:
+    - target: {fileID: 4818037237187073878, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818037237187073878, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073879, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1618,6 +1670,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1260788285}
     m_Modifications:
+    - target: {fileID: 4818037237187073878, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818037237187073878, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073879, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1636,19 +1696,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073879, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073879, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073879, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073879, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073879, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1660,11 +1720,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073879, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 4818037237187073882, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
       propertyPath: m_Name
       value: NeuronShort (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818037237187073883, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
+      propertyPath: canRotate
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4374fddaf2a8f4a3b8f7274c83d3076c, type: 3}
@@ -1694,7 +1758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1370519130384145741, guid: 31913cee2bc28472092ecab30753ccbd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.26
+      value: 7.03
       objectReference: {fileID: 0}
     - target: {fileID: 1370519130384145741, guid: 31913cee2bc28472092ecab30753ccbd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1765,6 +1829,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1260788285}
     m_Modifications:
+    - target: {fileID: 4260606671623008306, guid: ed925f5d6ed024ef2921c7b3f09de17e, type: 3}
+      propertyPath: canRotate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4260606671623008307, guid: ed925f5d6ed024ef2921c7b3f09de17e, type: 3}
       propertyPath: m_Name
       value: NeuronRight

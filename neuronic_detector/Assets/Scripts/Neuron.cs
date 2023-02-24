@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Neuron : MonoBehaviour
 {
+    public bool canRotate;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,9 @@ public class Neuron : MonoBehaviour
 
     private void OnMouseDown()
     {
-        StartCoroutine(RotateNeuron());
+        if (canRotate) {
+            StartCoroutine(RotateNeuron());
+        }
     }
 
     public IEnumerator RotateNeuron()
