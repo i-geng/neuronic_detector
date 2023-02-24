@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class Neuron : MonoBehaviour
 {
+    private bool isImmuneConnected;
 
+    public bool IsImmuneConnected { get => isImmuneConnected;}
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        isImmuneConnected = false;
     }
 
     private void OnMouseDown()
@@ -30,4 +26,15 @@ public class Neuron : MonoBehaviour
         }
     }
 
+    public void ActivateImmuneConnection()
+    {
+        isImmuneConnected = true;
+        // Go through connected children and activate their immune connections.
+    }
+
+    public void DeactivateImmuneConnection()
+    {
+        isImmuneConnected = false;
+        // Go through connected children and deactivate their immune connections.
+    }
 }

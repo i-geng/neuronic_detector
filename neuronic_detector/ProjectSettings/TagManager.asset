@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Terminal
   - Goal
+  - Immuneuron
+  - Infection
   layers:
   - Default
   - TransparentFX
